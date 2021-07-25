@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="21" short-name="cafe" url="https://polygon.codeforces.com/p/ADJA/cafe">
+    <names>
+        <name language="kazakh" value="Кафе"/>
+        <name language="russian" value="Кафе"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="kazakh" path="statements/kazakh/problem.tex" type="application/x-tex"/>
+        <statement language="kazakh" path="statements/.pdf/kazakh/problem.pdf" type="application/pdf"/>
+        <statement charset="UTF-8" language="russian" path="statements/russian/problem.tex" type="application/x-tex"/>
+        <statement language="russian" path="statements/.pdf/russian/problem.pdf" type="application/pdf"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz" cpu-speed="3600" input-file="B.in" output-file="B.out">
+        <testset name="tests">
+            <time-limit>500</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>40</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test cmd="generator-test-1" method="generated" sample="true"/>
+                <test cmd="generator-test-2" method="generated"/>
+                <test cmd="generator-test-3" method="generated"/>
+                <test cmd="generator-even 5 1" method="generated"/>
+                <test cmd="generator-rand-nonuniform 5 5 5 10 1" method="generated"/>
+                <test cmd="generator-rand-uniform-evenlove 5 3 4 10 1" method="generated"/>
+                <test cmd="generator-rand-uniform 5 5 5 10 1" method="generated"/>
+                <test cmd="generator-rand-uniform 5 3 5 10 1" method="generated"/>
+                <test cmd="generator-rand-uniform-smallnums 20 20 20 15 1" method="generated"/>
+                <test cmd="generator-rand-uniform-smallnums 20 20 20 15 2" method="generated"/>
+                <test cmd="generator-rand-uniform-bignums 20 20 20 15 1" method="generated"/>
+                <test cmd="generator-rand-uniform-bignums 20 20 20 15 2" method="generated"/>
+                <test cmd="generator-rand-nonuniform 17 18 19 13 55" method="generated"/>
+                <test cmd="generator-rand-nonuniform 17 18 19 13 77" method="generated"/>
+                <test cmd="generator-rand-uniform-evenlove 19 19 19 15 42" method="generated"/>
+                <test cmd="generator-rand-uniform 1 1 2 1 1" method="generated"/>
+                <test cmd="generator-rand-uniform 19 18 17 13 77" method="generated"/>
+                <test cmd="generator-rand-uniform 20 20 20 15 42" method="generated"/>
+                <test cmd="generator-rand-uniform 1 1 1 3 1" method="generated"/>
+                <test cmd="generator-even 7" method="generated"/>
+                <test cmd="generator-rand-uniform-smallnums 500 500 500 2000 1" method="generated"/>
+                <test cmd="generator-rand-uniform-smallnums 500 500 500 2000 2" method="generated"/>
+                <test cmd="generator-rand-uniform-bignums 500 500 500 2000 1" method="generated"/>
+                <test cmd="generator-rand-uniform-bignums 500 500 500 2000 2" method="generated"/>
+                <test cmd="generator-rand-nonuniform 317 218 199 5 55" method="generated"/>
+                <test cmd="generator-rand-nonuniform 317 218 199 2000 55" method="generated"/>
+                <test cmd="generator-rand-nonuniform 500 500 500 2000 1" method="generated"/>
+                <test cmd="generator-rand-nonuniform 500 500 500 2000 2" method="generated"/>
+                <test cmd="generator-rand-uniform-evenlove 317 218 199 2000 55" method="generated"/>
+                <test cmd="generator-even 20" method="generated"/>
+                <test cmd="generator-rand-uniform 317 218 199 1997 55" method="generated"/>
+                <test cmd="generator-rand-uniform-evenlove 500 500 500 2000 1" method="generated"/>
+                <test cmd="generator-rand-uniform 317 218 199 2000 55" method="generated"/>
+                <test cmd="generator-rand-uniform 500 500 500 2000 1" method="generated"/>
+                <test cmd="generator-rand-uniform 500 500 500 2000 2" method="generated"/>
+                <test cmd="generator-rand-uniform 500 500 500 2000 77" method="generated"/>
+                <test cmd="generator-rand-uniform 477 500 500 1 42" method="generated"/>
+                <test cmd="generator-rand-uniform 498 500 1 2000 1" method="generated"/>
+                <test cmd="generator-rand-uniform 500 2 3 2000 2" method="generated"/>
+                <test cmd="generator-even 500" method="generated"/>
+            </tests>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <attachments>
+            <file path="files/cms_conf.py" type="python.2"/>
+        </attachments>
+        <executables>
+            <executable>
+                <source path="files/generator-rand-uniform-evenlove.cpp" type="cpp.g++"/>
+                <binary path="files/generator-rand-uniform-evenlove.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/generator-rand-uniform.cpp" type="cpp.g++"/>
+                <binary path="files/generator-rand-uniform.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/generator-rand-nonuniform.cpp" type="cpp.g++"/>
+                <binary path="files/generator-rand-nonuniform.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/generator-test-3.cpp" type="cpp.g++"/>
+                <binary path="files/generator-test-3.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/generator-test-1.cpp" type="cpp.g++"/>
+                <binary path="files/generator-test-1.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/generator-rand-uniform-smallnums.cpp" type="cpp.g++"/>
+                <binary path="files/generator-rand-uniform-smallnums.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/generator-rand-uniform-bignums.cpp" type="cpp.g++"/>
+                <binary path="files/generator-rand-uniform-bignums.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/generator-test-2.cpp" type="cpp.g++"/>
+                <binary path="files/generator-test-2.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/generator-even.cpp" type="cpp.g++"/>
+                <binary path="files/generator-even.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/validator.cpp" type="cpp.g++"/>
+                <binary path="files/validator.exe" type="exe.win32"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::hcmp.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++"/>
+            <binary path="check.exe" type="exe.win32"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/validator.cpp" type="cpp.g++"/>
+                <binary path="files/validator.exe" type="exe.win32"/>
+                <testset>
+                    <test-count>9</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests>
+                        <test verdict="valid"/>
+                        <test verdict="valid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="valid"/>
+                    </tests>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="accepted">
+                <source path="solutions/correct_mk.cpp" type="cpp.g++"/>
+                <binary path="solutions/correct_mk.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/solution-ff.cpp" type="cpp.g++"/>
+                <binary path="solutions/solution-ff.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="wrong-answer">
+                <source path="solutions/solution-wa.cpp" type="cpp.g++"/>
+                <binary path="solutions/solution-wa.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/solution.cpp" type="cpp.g++"/>
+                <binary path="solutions/solution.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="time-limit-exceeded">
+                <source path="solutions/stupid-2.cpp" type="cpp.g++"/>
+                <binary path="solutions/stupid-2.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="time-limit-exceeded">
+                <source path="solutions/stupid.cpp" type="cpp.g++"/>
+                <binary path="solutions/stupid.exe" type="exe.win32"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+    <tags>
+        <tag value="flows"/>
+    </tags>
+</problem>
